@@ -1,23 +1,22 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto", "Shrikhand";
-} 
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", "Shrikhand";
+}
 
 .main-container {
-    
+  background-color: white;
 }
 
 .header__logo {
-    padding: 17px 0px;
+  padding: 17px 0px;
 }
 
 .search-container {
-background-color: #EAEAEA;
+  background-color: #EAEAEA;
 }
-
 .search-container__form__input {
-    border: unset;
-    background-color: #EAEAEA;
+  border: unset;
+  background-color: #EAEAEA;
 }
