@@ -1,0 +1,16 @@
+.main-container {
+    background-color: white;
+}
+
+.header__logo {
+    padding: 17px 0px;
+}
+
+.search-container {
+    background-color: $background-color;
+
+    &__form__input {
+        border: unset;
+        background-color: $background-color;
+    }
+}
