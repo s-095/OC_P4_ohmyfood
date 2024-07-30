@@ -4,6 +4,7 @@ $lightgrey-background-color: #F6F6F6;
 $pink: #ff79da;
 $purple: #9356dc;
 $gradient-background-color: linear-gradient(180deg, $pink 0%, $purple 100%);
+$shadow: 0px 6px 9px rgba(0, 0, 0, 0.14);
 
 @mixin button-style($gradient-background-color) {
     padding: 12px 15px;
@@ -11,9 +12,18 @@ $gradient-background-color: linear-gradient(180deg, $pink 0%, $purple 100%);
     border: unset;
     background: $gradient-background-color;
     color: white;
-    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.14);
+    box-shadow: $shadow;
 
     &:hover {
         background: linear-gradient(180deg, lighten($pink, 5%) 0%, lighten($purple, 5%) 100%);
     }
+}
+
+@mixin block-style {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: $shadow;
 }

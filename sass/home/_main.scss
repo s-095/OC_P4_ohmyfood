@@ -47,6 +47,19 @@
 
     & button {
         @include button-style($gradient-background-color);
-       
+
+    }
+}
+
+.fonctionnement {
+    padding: 45px 20px;
+
+    &__block {
+        @include block-style;
+        background-color: $lightgrey-background-color;
+
+        &_number {
+            padding: 8px;
+        }
     }
 }
