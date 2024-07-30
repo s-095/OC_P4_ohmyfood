@@ -1,4 +1,19 @@
 $white-background-color: #ffffff;
 $grey-background-color: #EAEAEA;
 $lightgrey-background-color: #F6F6F6;
-$gradient-background-color: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(218,109,219,1) 0%, rgba(147,86,220,1) 100%);
+$pink: #ff79da;
+$purple: #9356dc;
+$gradient-background-color: linear-gradient(180deg, $pink 0%, $purple 100%);
+
+@mixin button-style($gradient-background-color) {
+    padding: 12px 15px;
+    border-radius: 30px;
+    border: unset;
+    background: $gradient-background-color;
+    color: white;
+    box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.14);
+
+    &:hover {
+        background: linear-gradient(180deg, lighten($pink, 5%) 0%, lighten($purple, 5%) 100%);
+    }
+}

@@ -56,6 +56,10 @@
   padding: 12px 15px;
   border-radius: 30px;
   border: unset;
-  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(218, 109, 219) 0%, rgb(147, 86, 220) 100%);
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
+  box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.14);
+}
+.restaurants-explore button:hover {
+  background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
 }
