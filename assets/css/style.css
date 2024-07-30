@@ -7,6 +7,7 @@
 
 .main-container {
   background-color: #ffffff;
+  font-family: "Roboto";
 }
 
 .header__logo {
@@ -35,4 +36,13 @@
 }
 .search-container ::placeholder {
   color: black;
+}
+
+.restaurants-explore {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 27px;
 }
