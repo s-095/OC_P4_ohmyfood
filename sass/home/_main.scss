@@ -59,7 +59,19 @@
         background-color: $lightgrey-background-color;
 
         &_number {
-            padding: 8px;
+            @include list-style;
+        }
+
+        &__text-icon {
+            display: flex;
+            gap: 25px;
+        }
+
+        & p {
+            display: flex;
+            font-weight: 500;
+        }
+        
         }
     }
 }
