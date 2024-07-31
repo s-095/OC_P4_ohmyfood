@@ -1,6 +1,7 @@
 .main-container {
     background-color: $white-background-color;
     font-family: "Roboto";
+    
 }
 
 .header__logo {
@@ -49,6 +50,8 @@
         @include button-style($gradient-background-color);
 
     }
+
+    
 }
 
 .fonctionnement {
@@ -87,7 +90,10 @@
             object-fit: cover;
             height: 170px;
         }
-
+        a{
+            text-decoration: none;
+            color:black;
+        }
         p {
             font-weight: 200;
         }

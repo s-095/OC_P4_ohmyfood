@@ -112,6 +112,10 @@
      object-fit: cover;
   height: 170px;
 }
+.restaurants__cards a {
+  text-decoration: none;
+  color: black;
+}
 .restaurants__cards p {
   font-weight: 200;
 }
