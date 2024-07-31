@@ -118,3 +118,13 @@
 .restaurants__cards__text {
   padding: 15px;
 }
+
+footer {
+  background-color: #353535;
+  color: white;
+  font-weight: 200;
+  padding: 20px;
+}
+footer li {
+  list-style: none;
+}

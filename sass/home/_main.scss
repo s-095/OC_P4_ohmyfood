@@ -98,3 +98,13 @@
     }
 
 }
+
+footer {
+    background-color: $darkgrey-background-color;
+    color: white;
+    font-weight: 200;
+    padding: 20px;
+    & li {
+        list-style: none;
+    }
+}
