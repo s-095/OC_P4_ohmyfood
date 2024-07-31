@@ -67,4 +67,14 @@ header {
             }
         }
     }
+
+    .command-button{
+        display: flex;
+        justify-content: center;
+        button{
+        @include button-style($gradient-background-color);
+        display: flex;
+        }
+    }
 }
+

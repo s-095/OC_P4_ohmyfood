@@ -226,3 +226,19 @@ header__logo .return-arrow {
 .menu__food-block__cards span {
   font-weight: 400;
 }
+.menu .command-button {
+  display: flex;
+  justify-content: center;
+}
+.menu .command-button button {
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: unset;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.menu .command-button button:hover {
+  background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
+}
