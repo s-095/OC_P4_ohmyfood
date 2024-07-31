@@ -115,8 +115,18 @@
 .restaurants__cards p {
   font-weight: 200;
 }
-.restaurants__cards__text {
-  padding: 15px;
+.restaurants__cards__caption {
+  display: flex;
+  padding: 14px;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.restaurants__cards__caption__heart {
+  border: unset;
+  background-color: unset;
+  font-size: 22px;
+  font-weight: 100;
 }
 
 footer {

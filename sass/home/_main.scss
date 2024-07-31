@@ -92,11 +92,19 @@
             font-weight: 200;
         }
 
-        &__text {
-            padding: 15px;
+        &__caption {
+            display: flex;
+            padding: 14px;
+            justify-content: space-between;
+            align-content: center;
+            align-items: center;
+
+            &__heart {
+                @include heart-button
+            }
+
         }
     }
-
 }
 
 footer {
@@ -104,6 +112,7 @@ footer {
     color: white;
     font-weight: 200;
     padding: 20px;
+
     & li {
         list-style: none;
     }
