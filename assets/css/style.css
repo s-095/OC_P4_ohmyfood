@@ -162,3 +162,34 @@ footer .fa-solid {
   display: flex;
   align-items: center;
 }
+
+header__logo .return-arrow {
+  display: flex;
+  margin-left: -10px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  padding: 15px;
+}
+.menu__title {
+  display: flex;
+}
+.menu__title h1 {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-weight: 200;
+}
+.menu__title__like {
+  border: none;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: 100;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

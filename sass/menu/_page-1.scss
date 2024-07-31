@@ -1,0 +1,36 @@
+header {
+    &__logo {
+        .return-arrow {
+            display: flex;
+            margin-left: -10px;
+        }
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+}
+
+.menu {
+    background-color: $lightgrey-background-color;
+    padding: 15px;
+
+
+    &__title {
+        display: flex;
+
+        h1 {
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 200;
+        }
+
+        &__like {
+            @include heart-button;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
