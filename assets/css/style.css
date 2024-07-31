@@ -123,18 +123,38 @@
   align-items: center;
 }
 .restaurants__cards__caption__heart {
-  border: unset;
-  background-color: unset;
+  border: none;
+  background-color: transparent;
   font-size: 22px;
   font-weight: 100;
+  cursor: pointer;
 }
 
 footer {
   background-color: #353535;
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   padding: 20px;
 }
 footer li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer h3 {
+  font-family: Shrikhand;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+footer a {
+  display: flex;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+}
+footer .fa-solid {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
 }

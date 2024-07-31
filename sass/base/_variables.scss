@@ -1,7 +1,7 @@
 $white-background-color: #ffffff;
 $grey-background-color: #EAEAEA;
 $lightgrey-background-color: #F6F6F6;
-$darkgrey-background-color:#353535;
+$darkgrey-background-color: #353535;
 $pink: #ff79da;
 $purple: #9356dc;
 $gradient-background-color: linear-gradient(180deg, $pink 0%, $purple 100%);
@@ -48,8 +48,9 @@ $shadow: 0px 6px 9px rgba(0, 0, 0, 0.14);
 }
 
 @mixin heart-button {
-    border: unset;
-    background-color: unset;
+    border: none;
+    background-color: transparent;
     font-size: 22px;
     font-weight: 100;
+    cursor: pointer;
 }

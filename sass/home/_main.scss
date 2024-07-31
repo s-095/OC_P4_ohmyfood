@@ -100,20 +100,43 @@
             align-items: center;
 
             &__heart {
-                @include heart-button
+                @include heart-button;
+
             }
 
         }
     }
 }
 
-footer {
-    background-color: $darkgrey-background-color;
-    color: white;
-    font-weight: 200;
-    padding: 20px;
+    footer {
+        background-color: $darkgrey-background-color;
+        color: white;
+        font-weight: 300;
+        padding: 20px;
 
-    & li {
-        list-style: none;
+        li {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        h3 {
+            font-family: Shrikhand;
+            font-size: 16px;
+            padding-bottom: 16px;
+        }
+
+        a {
+            display: flex;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .fa-solid{
+            
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
     }
-}
