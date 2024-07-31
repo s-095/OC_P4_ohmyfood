@@ -1,0 +1,45 @@
+@mixin button-style($gradient-background-color) {
+    padding: 12px 15px;
+    border-radius: 30px;
+    border: unset;
+    background: $gradient-background-color;
+    color: white;
+    box-shadow: $shadow;
+
+    &:hover {
+        background: linear-gradient(180deg, lighten($pink, 5%) 0%, lighten($purple, 5%) 100%);
+    }
+}
+
+@mixin block-style {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    padding-left: -40px;
+    gap: 70px;
+}
+
+@mixin list-style {
+    padding: 3px 8px;
+    background-color: $purple;
+    border-radius: 20px;
+    color: white;
+    margin: -37px;
+}
+
+@mixin card-style {
+    margin-top: 15px;
+    background-color: $white-background-color;
+    border-radius: 20px;
+}
+
+@mixin heart-button {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 100;
+    cursor: pointer;
+}

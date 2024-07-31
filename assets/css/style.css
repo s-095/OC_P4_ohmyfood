@@ -171,8 +171,11 @@ header__logo .return-arrow {
 }
 
 .menu {
+  position: relative;
   background-color: #F6F6F6;
   padding: 15px;
+  margin-top: -25px;
+  border-radius: 20px 20px 0px 0px;
 }
 .menu__title {
   display: flex;
@@ -241,4 +244,53 @@ header__logo .return-arrow {
 }
 .menu .command-button button:hover {
   background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
+}
+
+.menu__food-block:nth-child(1) {
+  animation: apparition 2000ms 0ms;
+}
+
+.menu__food-block:nth-child(2) {
+  animation: apparition 2000ms 1000ms;
+}
+
+.menu__food-block:nth-child(3) {
+  animation: apparition 2000ms 2000ms;
+}
+
+.menu__food-block:nth-child(4) {
+  animation: apparition 2000ms 3000ms;
+}
+
+.menu__food-block:nth-child(5) {
+  animation: apparition 2000ms 4000ms;
+}
+
+.menu__food-block:nth-child(6) {
+  animation: apparition 2000ms 5000ms;
+}
+
+.menu__food-block:nth-child(7) {
+  animation: apparition 2000ms 6000ms;
+}
+
+.menu__food-block:nth-child(8) {
+  animation: apparition 2000ms 7000ms;
+}
+
+.menu__food-block:nth-child(9) {
+  animation: apparition 2000ms 8000ms;
+}
+
+.menu__food-block:nth-child(10) {
+  animation: apparition 2000ms 9000ms;
+}
+
+@keyframes apparition {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }

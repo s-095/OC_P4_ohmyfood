@@ -8,14 +8,18 @@ header {
 }
 
 .banner {
+
     img {
         width: 100%;
     }
 }
 
 .menu {
+    position: relative;
     background-color: $lightgrey-background-color;
     padding: 15px;
+    margin-top: -25px;
+    border-radius: 20px 20px 0px 0px;
 
 
     &__title {
@@ -62,19 +66,41 @@ header {
             align-items: unset;
             padding: 15px;
 
+
+
             span {
                 font-weight: 400;
             }
         }
     }
 
-    .command-button{
+    .command-button {
         display: flex;
         justify-content: center;
-        button{
-        @include button-style($gradient-background-color);
-        display: flex;
+
+        button {
+            @include button-style($gradient-background-color);
+            display: flex;
         }
     }
 }
 
+@for $i from 1 through 10 {
+    .menu__food-block:nth-child(#{$i}) {
+        animation: apparition 2000ms ($i - 1) * 1000ms;
+    }
+}
+
+@keyframes apparition {
+
+    from {
+        transform: translateX(500px);
+
+    }
+
+    to {
+        transform: translateX(0);
+
+    }
+
+}
