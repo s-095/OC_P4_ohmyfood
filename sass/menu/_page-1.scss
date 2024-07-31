@@ -34,15 +34,37 @@ header {
         }
     }
 
-    &__food-block{
+    &__food-block {
         margin-top: 25px;
+
         h2 {
             font-weight: 100;
             font-size: 16px;
         }
-        &__cards{
-                @include block-style;
-                background-color: white;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 200;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__cards {
+            @include block-style;
+            background-color: white;
+            flex-direction: column;
+            gap: unset;
+            align-items: unset;
+            padding: 15px;
+
+            span {
+                font-weight: 400;
             }
+        }
     }
 }

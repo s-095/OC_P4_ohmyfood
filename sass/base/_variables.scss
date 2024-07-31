@@ -5,7 +5,7 @@ $darkgrey-background-color: #353535;
 $pink: #ff79da;
 $purple: #9356dc;
 $gradient-background-color: linear-gradient(180deg, $pink 0%, $purple 100%);
-$shadow: 0px 6px 9px rgba(0, 0, 0, 0.14);
+$shadow: 0px 6px 9px rgba(0, 0, 0, 0.10);
 
 @mixin button-style($gradient-background-color) {
     padding: 12px 15px;
@@ -27,9 +27,7 @@ $shadow: 0px 6px 9px rgba(0, 0, 0, 0.14);
     padding: 25px;
     border-radius: 20px;
     box-shadow: $shadow;
-    display: flex;
     padding-left: -40px;
-    align-items: center;
     gap: 70px;
 }
 
