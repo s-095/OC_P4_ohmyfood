@@ -55,7 +55,7 @@
 }
 
 .fonctionnement {
-    padding: 45px 20px;
+    padding: 75px 20px;
 
     &__block {
         @include block-style;
@@ -68,8 +68,15 @@
         &__text-icon {
             display: flex;
             gap: 25px;
+            
+            i {
+                color: #7E7E7E;
+            
+            &:hover {
+                color: $purple;
+            }
         }
-
+    }
         & p {
             display: flex;
             font-weight: 500;

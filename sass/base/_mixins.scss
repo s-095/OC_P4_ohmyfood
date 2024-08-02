@@ -1,5 +1,5 @@
 @mixin button-style($gradient-background-color) {
-    padding: 12px 15px;
+    padding: 12px 18px;
     border-radius: 30px;
     border: unset;
     background: $gradient-background-color;
@@ -14,8 +14,8 @@
 @mixin block-style {
     display: flex;
     align-items: center;
-    margin: 20px;
-    padding: 25px;
+    margin: 20px 0px;
+    padding: 20px 25px;
     border-radius: 20px;
     box-shadow: $shadow;
     padding-left: -40px;
