@@ -108,6 +108,7 @@
   margin-top: 15px;
   background-color: #ffffff;
   border-radius: 20px;
+  position: relative;
 }
 .restaurants__cards img {
   width: 100%;
@@ -115,6 +116,15 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: 170px;
+}
+.restaurants__cards span {
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 8px 15px;
+  border-radius: 6px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
 }
 .restaurants__cards a {
   text-decoration: none;

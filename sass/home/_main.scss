@@ -1,7 +1,7 @@
 .main-container {
     background-color: $white-background-color;
     font-family: "Roboto";
-    
+
 }
 
 .header__logo {
@@ -51,7 +51,7 @@
 
     }
 
-    
+
 }
 
 .fonctionnement {
@@ -68,19 +68,22 @@
         &__text-icon {
             display: flex;
             gap: 25px;
-            
+
             i {
                 color: #7E7E7E;
-            
-            &:hover {
-                color: $purple;
+
+                &:hover {
+                    color: $purple;
+                }
             }
         }
-    }
+
         & p {
             display: flex;
             font-weight: 500;
         }
+
+
     }
 }
 
@@ -90,6 +93,7 @@
 
     &__cards {
         @include card-style;
+        position: relative;
 
         img {
             width: 100%;
@@ -97,10 +101,23 @@
             object-fit: cover;
             height: 170px;
         }
-        a{
-            text-decoration: none;
-            color:black;
+
+        span {
+            color: #008766;
+            background-color: $lightgreen;
+            padding: 8px 15px;
+            border-radius: 6px;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+
         }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
         p {
             font-weight: 200;
         }
