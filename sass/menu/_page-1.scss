@@ -1,11 +1,19 @@
 header {
-    &__logo {
-        .return-arrow {
-            display: flex;
-            margin-left: -10px;
+    .header__logo {
+        display: flex;
+        align-items: center;
+
+        a {
+            color: black;
+            font-size: 1.2em;
+            text-decoration: none;
+            position: relative;
+            left: -55px;
         }
+
     }
 }
+
 
 .banner {
 
@@ -24,6 +32,7 @@ header {
 
     &__title {
         display: flex;
+        justify-content: space-between;
 
         h1 {
             font-family: Shrikhand;
@@ -33,8 +42,8 @@ header {
 
         &__like {
             @include heart-button;
-            display: flex;
-            align-items: center;
+            position: relative;
+            left: -20px;
         }
     }
 
@@ -44,6 +53,18 @@ header {
         h2 {
             font-weight: 100;
             font-size: 16px;
+            position: relative;
+            padding-bottom: 5px;
+
+            &::after {
+                content: "";
+                width: 41px;
+                height: 4px;
+                background-color: $lightgreen;
+                position: absolute;
+                left: 0;
+                bottom: -7px;
+            }
         }
 
         h3 {
@@ -66,8 +87,6 @@ header {
             align-items: unset;
             padding: 15px;
 
-
-
             span {
                 font-weight: 400;
             }
@@ -77,6 +96,7 @@ header {
     .command-button {
         display: flex;
         justify-content: center;
+        padding: 20px;
 
         button {
             @include button-style($gradient-background-color);

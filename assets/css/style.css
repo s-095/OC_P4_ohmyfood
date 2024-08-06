@@ -5,6 +5,53 @@
   font-family: "Roboto", "Shrikhand";
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+  animation: hold 2s, fade 0.5s 2s forwards;
+}
+.loader .spinner {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid #ff79da;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes hold {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .main-container {
   background-color: #ffffff;
   font-family: "Roboto";
@@ -177,9 +224,16 @@ footer .fa-solid {
   align-items: center;
 }
 
-header__logo .return-arrow {
+header .header__logo {
   display: flex;
-  margin-left: -10px;
+  align-items: center;
+}
+header .header__logo a {
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  position: relative;
+  left: -55px;
 }
 
 .banner img {
@@ -195,6 +249,7 @@ header__logo .return-arrow {
 }
 .menu__title {
   display: flex;
+  justify-content: space-between;
 }
 .menu__title h1 {
   font-family: Shrikhand;
@@ -207,8 +262,8 @@ header__logo .return-arrow {
   font-size: 22px;
   font-weight: 100;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  position: relative;
+  left: -20px;
 }
 .menu__food-block {
   margin-top: 25px;
@@ -216,6 +271,17 @@ header__logo .return-arrow {
 .menu__food-block h2 {
   font-weight: 100;
   font-size: 16px;
+  position: relative;
+  padding-bottom: 5px;
+}
+.menu__food-block h2::after {
+  content: "";
+  width: 41px;
+  height: 4px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
 }
 .menu__food-block h3 {
   font-size: 18px;
@@ -248,6 +314,7 @@ header__logo .return-arrow {
 .menu .command-button {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 .menu .command-button button {
   padding: 12px 18px;

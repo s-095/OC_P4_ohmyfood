@@ -1,3 +1,54 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    animation: hold 2s, fade 0.5s 2s forwards;
+
+    .spinner {
+        border: 5px solid transparent;
+        border-radius: 50%;
+        border-top: 5px solid $pink;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes hold {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 .main-container {
     background-color: $white-background-color;
     font-family: "Roboto";
@@ -131,9 +182,10 @@
 
             &__heart {
                 @include heart-button;
-
+               
+            
             }
-
+            
         }
     }
 }
