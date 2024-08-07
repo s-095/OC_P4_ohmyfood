@@ -160,7 +160,7 @@
 }
 .restaurants__cards img {
   width: 100%;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
   height: 170px;
@@ -187,13 +187,31 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  position: relative;
 }
-.restaurants__cards__caption__heart {
+.restaurants__cards__caption__heart, .restaurants__cards__caption__full-heart {
   border: none;
   background-color: transparent;
   font-size: 22px;
   font-weight: 100;
   cursor: pointer;
+  position: absolute;
+  right: 20px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: opacity 0.3s ease-in-out;
+}
+.restaurants__cards__caption .restaurants__cards__caption__full-heart {
+  opacity: 0;
+}
+.restaurants__cards__caption:hover .restaurants__cards__caption__heart {
+  opacity: 0;
+}
+.restaurants__cards__caption:hover .restaurants__cards__caption__full-heart {
+  opacity: 1;
+  color: #9356dc;
 }
 
 footer {
@@ -248,23 +266,35 @@ header .header__logo a {
   margin-top: -25px;
   border-radius: 20px 20px 0px 0px;
 }
-.menu__title {
+.menu .menu__title {
   display: flex;
   justify-content: space-between;
 }
-.menu__title h1 {
+.menu .menu__title h1 {
   font-family: Shrikhand;
   font-size: 28px;
   font-weight: 200;
 }
-.menu__title__like {
+.menu .menu__title__heart, .menu .menu__title__full-heart {
   border: none;
   background-color: transparent;
   font-size: 22px;
   font-weight: 100;
   cursor: pointer;
-  position: relative;
-  left: -20px;
+  position: absolute;
+  right: 40px;
+  line-height: 40px;
+  transition: opacity 0.3s ease-in-out;
+}
+.menu .menu__title .menu__title__full-heart {
+  opacity: 0;
+}
+.menu .menu__title:hover .menu__title__heart {
+  opacity: 0;
+}
+.menu .menu__title:hover .menu__title__full-heart {
+  opacity: 1;
+  color: #9356dc;
 }
 .menu__food-block {
   margin-top: 25px;
@@ -371,7 +401,7 @@ header .header__logo a {
 
 @keyframes apparition {
   from {
-    transform: translateX(9999px);
+    transform: translateX(500px);
   }
   to {
     transform: translateX(0);

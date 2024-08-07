@@ -30,22 +30,44 @@ header {
     border-radius: 20px 20px 0px 0px;
 
 
-    &__title {
+    .menu__title {
         display: flex;
         justify-content: space-between;
-
+        
+    
         h1 {
             font-family: Shrikhand;
             font-size: 28px;
             font-weight: 200;
         }
-
-        &__like {
+    
+        &__heart,
+        &__full-heart {
             @include heart-button;
-            position: relative;
-            left: -20px;
+            position: absolute;
+            right: 40px;
+            line-height: 40px;
+            transition: opacity 0.3s ease-in-out;
+            
+        }
+    
+        .menu__title__full-heart {
+            opacity: 0;
+        }
+    
+        &:hover {
+            .menu__title__heart {
+                opacity: 0;
+            }
+    
+            .menu__title__full-heart {
+                opacity: 1;
+                color: $purple; 
+            }
         }
     }
+    
+    
 
     &__food-block {
         margin-top: 25px;
@@ -94,12 +116,12 @@ header {
             position: relative;
             overflow: hidden;
             cursor: pointer;
-        
+
             span {
                 font-weight: 400;
                 transition: padding-right 300ms ease-in-out;
             }
-        
+
             &__check-icon {
                 position: absolute;
                 right: -60px;
@@ -113,11 +135,11 @@ header {
                 background-color: $lightgreen;
                 transition: right 300ms ease-in-out;
             }
-        
+
             &:hover span {
                 padding-right: 60px;
             }
-        
+
             &:hover .menu__food-block__cards__check-icon {
                 right: 0;
             }
@@ -147,7 +169,7 @@ header {
 
 @keyframes apparition {
     from {
-        transform: translateX(9999px);
+        transform: translateX(500px);
     }
 
     to {
