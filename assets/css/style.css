@@ -211,7 +211,10 @@
 }
 .restaurants__cards__caption:hover .restaurants__cards__caption__full-heart {
   opacity: 1;
-  color: #9356dc;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 footer {
@@ -302,7 +305,10 @@ header .header__logo a {
 }
 .menu .menu__title:hover .menu__title__full-heart {
   opacity: 1;
-  color: #9356dc;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .menu__food-block {
   margin-top: 25px;

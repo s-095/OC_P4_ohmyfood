@@ -33,14 +33,14 @@ header {
     .menu__title {
         display: flex;
         justify-content: space-between;
-        
-    
+
+
         h1 {
             font-family: Shrikhand;
             font-size: 28px;
             font-weight: 200;
         }
-    
+
         &__heart,
         &__full-heart {
             @include heart-button;
@@ -48,26 +48,29 @@ header {
             right: 40px;
             line-height: 40px;
             transition: opacity 0.3s ease-in-out;
-            
+
         }
-    
+
         .menu__title__full-heart {
             opacity: 0;
         }
-    
+
         &:hover {
             .menu__title__heart {
                 opacity: 0;
             }
-    
+
             .menu__title__full-heart {
                 opacity: 1;
-                color: $purple; 
+                background: $gradient-background-color;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
         }
     }
-    
-    
+
+
 
     &__food-block {
         margin-top: 25px;

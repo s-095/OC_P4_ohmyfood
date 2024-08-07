@@ -206,7 +206,11 @@
 
                 .restaurants__cards__caption__full-heart {
                     opacity: 1;
-                    color: $purple;
+                    background: $gradient-background-color;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    
                 }
             }
         }
@@ -250,10 +254,10 @@ footer {
 @media (min-width: 992px) {
     .fonctionnement {
         display: flex;
-        
-       h2 {
-        display: flex; 
-    }
-    
+
+        h2 {
+            display: flex;
+        }
+
     }
 }
