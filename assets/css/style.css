@@ -293,8 +293,11 @@ header .header__logo a {
   font-weight: 200;
   display: flex;
   justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu__food-block__cards {
+.menu__food-block .menu__food-block__cards {
   display: flex;
   align-items: center;
   margin: 20px 0px;
@@ -304,13 +307,37 @@ header .header__logo a {
   padding-left: -40px;
   gap: 70px;
   background-color: white;
+  display: flex;
   flex-direction: column;
   gap: unset;
   align-items: unset;
   padding: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
-.menu__food-block__cards span {
+.menu__food-block .menu__food-block__cards span {
   font-weight: 400;
+  transition: padding-right 300ms ease-in-out;
+}
+.menu__food-block .menu__food-block__cards__check-icon {
+  position: absolute;
+  right: -60px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  color: white;
+  background-color: #99E2D0;
+  transition: right 300ms ease-in-out;
+}
+.menu__food-block .menu__food-block__cards:hover span {
+  padding-right: 60px;
+}
+.menu__food-block .menu__food-block__cards:hover .menu__food-block__cards__check-icon {
+  right: 0;
 }
 .menu .command-button {
   display: flex;
@@ -331,48 +358,20 @@ header .header__logo a {
 }
 
 .menu__food-block:nth-child(1) {
-  animation: apparition 2000ms 0ms;
+  animation: apparition 3000ms 0ms backwards;
 }
 
 .menu__food-block:nth-child(2) {
-  animation: apparition 2000ms 1000ms;
+  animation: apparition 3000ms 1000ms backwards;
 }
 
 .menu__food-block:nth-child(3) {
-  animation: apparition 2000ms 2000ms;
-}
-
-.menu__food-block:nth-child(4) {
-  animation: apparition 2000ms 3000ms;
-}
-
-.menu__food-block:nth-child(5) {
-  animation: apparition 2000ms 4000ms;
-}
-
-.menu__food-block:nth-child(6) {
-  animation: apparition 2000ms 5000ms;
-}
-
-.menu__food-block:nth-child(7) {
-  animation: apparition 2000ms 6000ms;
-}
-
-.menu__food-block:nth-child(8) {
-  animation: apparition 2000ms 7000ms;
-}
-
-.menu__food-block:nth-child(9) {
-  animation: apparition 2000ms 8000ms;
-}
-
-.menu__food-block:nth-child(10) {
-  animation: apparition 2000ms 9000ms;
+  animation: apparition 3000ms 2000ms backwards;
 }
 
 @keyframes apparition {
   from {
-    transform: translateX(500px);
+    transform: translateX(9999px);
   }
   to {
     transform: translateX(0);

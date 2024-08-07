@@ -77,21 +77,55 @@ header {
             font-weight: 200;
             display: flex;
             justify-content: space-between;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+
         }
 
-        &__cards {
+        .menu__food-block__cards {
             @include block-style;
             background-color: white;
+            display: flex;
             flex-direction: column;
             gap: unset;
             align-items: unset;
             padding: 15px;
-
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        
             span {
                 font-weight: 400;
+                transition: padding-right 300ms ease-in-out;
+            }
+        
+            &__check-icon {
+                position: absolute;
+                right: -60px;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                color: white;
+                background-color: $lightgreen;
+                transition: right 300ms ease-in-out;
+            }
+        
+            &:hover span {
+                padding-right: 60px;
+            }
+        
+            &:hover .menu__food-block__cards__check-icon {
+                right: 0;
             }
         }
+
+
     }
+
 
     .command-button {
         display: flex;
@@ -105,22 +139,18 @@ header {
     }
 }
 
-@for $i from 1 through 10 {
+@for $i from 1 through 3 {
     .menu__food-block:nth-child(#{$i}) {
-        animation: apparition 2000ms ($i - 1) * 1000ms;
+        animation: apparition 3000ms ($i - 1) * 1000ms backwards;
     }
 }
 
 @keyframes apparition {
-
     from {
-        transform: translateX(500px);
-
+        transform: translateX(9999px);
     }
 
     to {
         transform: translateX(0);
-
     }
-
 }
