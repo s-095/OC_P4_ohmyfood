@@ -246,3 +246,14 @@ footer {
         align-items: center;
     }
 }
+
+@media (min-width: 992px) {
+    .fonctionnement {
+        display: flex;
+        
+       h2 {
+        display: flex; 
+    }
+    
+    }
+}

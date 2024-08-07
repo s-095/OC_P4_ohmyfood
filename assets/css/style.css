@@ -243,6 +243,14 @@ footer .fa-solid {
   align-items: center;
 }
 
+@media (min-width: 992px) {
+  .fonctionnement {
+    display: flex;
+  }
+  .fonctionnement h2 {
+    display: flex;
+  }
+}
 header .header__logo {
   display: flex;
   align-items: center;
