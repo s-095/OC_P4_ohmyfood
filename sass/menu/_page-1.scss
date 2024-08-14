@@ -14,7 +14,6 @@ header {
     }
 }
 
-
 .banner {
 
     img {
@@ -22,13 +21,14 @@ header {
     }
 }
 
+
 .menu {
     position: relative;
     background-color: $lightgrey-background-color;
     padding: 15px;
     margin-top: -25px;
     border-radius: 20px 20px 0px 0px;
-
+    overflow: hidden;
 
     .menu__title {
         display: flex;
@@ -70,16 +70,14 @@ header {
         }
     }
 
+    .menu__food-block {
+        margin-top: 35px;
 
-
-    &__food-block {
-        margin-top: 25px;
 
         h2 {
-            font-weight: 100;
             font-size: 16px;
+            font-weight: 300;
             position: relative;
-            padding-bottom: 5px;
 
             &::after {
                 content: "";
@@ -92,64 +90,81 @@ header {
             }
         }
 
-        h3 {
-            font-size: 18px;
-            font-weight: 400;
+        .menu__food-block__cards {
+            margin-top: 25px;
+            box-sizing: border-box;
+            background-color: $white-background-color;
+            box-shadow: $shadow;
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
         }
 
-        p {
-            font-size: 15px;
-            font-weight: 200;
+        .menu__food-block__cards-txt {
             display: flex;
-            justify-content: space-between;
-            text-overflow: ellipsis;
+            flex-direction: column;
+            padding: 15px;
             white-space: nowrap;
             overflow: hidden;
 
-        }
-
-        .menu__food-block__cards {
-            @include block-style;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            gap: unset;
-            align-items: unset;
-            padding: 15px;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-
-            span {
+            h3 {
+                font-size: 18px;
                 font-weight: 400;
-                transition: padding-right 300ms ease-in-out;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
-            &__check-icon {
-                position: absolute;
-                right: -60px;
-                top: 0;
-                bottom: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 60px;
-                color: white;
-                background-color: $lightgreen;
-                transition: right 300ms ease-in-out;
-            }
-
-            &:hover span {
-                padding-right: 60px;
-            }
-
-            &:hover .menu__food-block__cards__check-icon {
-                right: 0;
+            p {
+                font-size: 15px;
+                font-weight: 200;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
 
+        .menu__food-block__cards-price {
+            display: flex;
+            margin-right: -75px;
+            transition: margin-right 300ms ease-in-out;
 
+            &:hover {
+                margin-right: 0px;
+            }
+
+
+            p {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 15px;
+                padding: 0px 25px 15px 0px;
+            }
+
+            .menu__food-block__cards__check-icon {
+
+                i {
+
+                    color: $white-background-color;
+                    background-color: $lightgreen;
+                    height: 100%;
+                    background-color: #99E2D0;
+                    border-radius: 0px 15px 15px 0px;
+                    width: 59px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+
+        }
     }
+
+
+
 
 
     .command-button {
@@ -164,7 +179,7 @@ header {
     }
 }
 
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
     .menu__food-block:nth-child(#{$i}) {
         animation: apparition 3000ms ($i - 1) * 1000ms backwards;
     }
