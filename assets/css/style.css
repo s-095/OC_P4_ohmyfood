@@ -472,3 +472,19 @@ header .header__logo a {
     transform: translateX(0);
   }
 }
+@media (min-width: 992px) {
+  .banner img {
+    height: 383px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main-container {
+    margin: 0px 183px;
+  }
+  .main-container .menu {
+    padding: 15px 180px;
+  }
+  .main-container .menu__title {
+    display: flex;
+  }
+}

@@ -193,3 +193,21 @@ header {
         transform: translateX(0);
     }
 }
+
+@media (min-width: 992px) {
+ .banner{
+    img {
+        height: 383px;
+        object-fit: cover;
+    }
+ }
+.main-container {
+    margin: 0px 183px;
+    .menu {
+        padding: 15px 180px;
+        &__title{
+            display: flex;
+        }
+    }
+}
+}
