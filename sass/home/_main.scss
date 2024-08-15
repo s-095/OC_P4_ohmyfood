@@ -124,6 +124,7 @@
         .fonctionnement__block {
             @include block-style;
             background-color: $lightgrey-background-color;
+            margin: 20px 10px 20px 13px;
 
             &_number {
                 @include list-style;
@@ -278,7 +279,7 @@ footer {
 
     .fonctionnement {
         display: flex;
-        padding: 60px;
+        padding: 60px 180px;
 
         h2 {
             display: flex;
@@ -287,13 +288,13 @@ footer {
 
         .fonctionnement-cards {
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
     }
 
     .restaurants {
-        padding: 59px;
+        padding: 60px 180px;
 
         .restaurants-block {
             flex-direction: row;
@@ -307,16 +308,22 @@ footer {
         }
     }
 
-footer {
-    display: flex;
-    justify-content: flex-start;
+    footer {
+        display: flex;
+        justify-content: flex-start;
         flex-direction: row-reverse;
         align-items: baseline;
         gap: 57px;
-    & li {
-        flex-direction: row;
+        height: 114px;
+        padding: unset;
+        padding-top: 55px;
+        padding-right: 40px;
+
+        & li {
+            flex-direction: row;
+            gap:20px;
+        }
     }
-}
 
 
 }

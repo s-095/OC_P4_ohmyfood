@@ -105,7 +105,7 @@
   font-size: 18px;
 }
 .restaurants-explore button {
-  padding: 12px 18px;
+  padding: 12px 28px;
   border-radius: 30px;
   border: unset;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
@@ -135,6 +135,7 @@
   padding-left: -40px;
   gap: 70px;
   background-color: #F6F6F6;
+  margin: 20px 10px 20px 13px;
 }
 .fonctionnement .fonctionnement-cards .fonctionnement__block_number {
   padding: 3px 8px;
@@ -268,17 +269,17 @@ footer .fa-solid {
   }
   .fonctionnement {
     display: flex;
-    padding: 60px;
+    padding: 60px 180px;
   }
   .fonctionnement h2 {
     display: flex;
   }
   .fonctionnement .fonctionnement-cards {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .restaurants {
-    padding: 59px;
+    padding: 60px 180px;
   }
   .restaurants .restaurants-block {
     flex-direction: row;
@@ -295,21 +296,35 @@ footer .fa-solid {
     flex-direction: row-reverse;
     align-items: baseline;
     gap: 57px;
+    height: 114px;
+    padding: unset;
+    padding-top: 55px;
+    padding-right: 40px;
   }
   footer li {
     flex-direction: row;
+    gap: 20px;
   }
 }
-header .header__logo {
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header__logo {
   display: flex;
   align-items: center;
 }
-header .header__logo a {
+header .return-arrow {
+  position: absolute;
+  left: 0;
+  padding-left: 20px;
+}
+header .return-arrow a {
   color: black;
   font-size: 1.2em;
   text-decoration: none;
   position: relative;
-  left: -55px;
 }
 
 .banner img {
@@ -433,10 +448,10 @@ header .header__logo a {
 .menu .command-button {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 40px 0px 25px;
 }
 .menu .command-button button {
-  padding: 12px 18px;
+  padding: 12px 28px;
   border-radius: 30px;
   border: unset;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
@@ -473,18 +488,23 @@ header .header__logo a {
   }
 }
 @media (min-width: 992px) {
+  .main-block {
+    padding: 0px 193px;
+  }
   .banner img {
     height: 383px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .main-container {
-    margin: 0px 183px;
-  }
-  .main-container .menu {
+  .menu {
     padding: 15px 180px;
   }
-  .main-container .menu__title {
+  .menu .menu__title {
     display: flex;
+    justify-content: center;
+    padding: 40px 20px 10px;
+  }
+  .menu .menu__title__heart, .menu .menu__title__full-heart {
+    right: 210px;
   }
 }
