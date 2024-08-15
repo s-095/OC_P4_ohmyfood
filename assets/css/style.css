@@ -306,21 +306,16 @@ footer .fa-solid {
     gap: 20px;
   }
 }
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header__logo {
+header .header__logo {
   display: flex;
   align-items: center;
 }
-header .return-arrow {
+header .header__logo .return-arrow {
   position: absolute;
   left: 0;
   padding-left: 20px;
 }
-header .return-arrow a {
+header .header__logo .return-arrow a {
   color: black;
   font-size: 1.2em;
   text-decoration: none;
@@ -422,7 +417,7 @@ header .return-arrow a {
 .menu .menu__food-block .menu__food-block__cards-price {
   display: flex;
   margin-right: -75px;
-  transition: margin-right 300ms ease-in-out;
+  transition: margin-right 400ms ease-in-out;
 }
 .menu .menu__food-block .menu__food-block__cards-price:hover {
   margin-right: 0px;
