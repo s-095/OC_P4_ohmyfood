@@ -161,7 +161,6 @@
   padding: 20px 25px;
   border-radius: 20px;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
-  padding-left: -40px;
   gap: 70px;
   background-color: #F6F6F6;
   margin: 20px 10px 20px 13px;
@@ -275,7 +274,7 @@ footer {
   font-weight: 300;
   padding: 20px;
 }
-footer li {
+footer ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -501,7 +500,7 @@ header .header__logo .return-arrow a {
     padding-top: 55px;
     padding-right: 40px;
   }
-  footer li {
+  footer ul {
     flex-direction: row;
     gap: 20px;
   }
