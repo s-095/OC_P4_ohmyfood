@@ -93,7 +93,6 @@
         .fonctionnement__block {
             @include block-style;
             background-color: $lightgrey-background-color;
-            margin: 20px 10px 20px 13px;
 
             &:hover {
                 i {
@@ -108,6 +107,7 @@
             &__text-icon {
                 display: flex;
                 gap: 25px;
+                margin-left: -20px;
 
                 i {
                     color: #7E7E7E;
@@ -217,19 +217,21 @@ footer {
     font-weight: 300;
     padding: 20px;
 
-    ul {
+    .links {
         list-style: none;
         display: flex;
         flex-direction: column;
 
-        li {
+        p {
             padding: 4px;
         }
+
         .links-1 {
             display: flex;
             flex-direction: column;
         }
-        .links-2{
+
+        .links-2 {
             display: flex;
             flex-direction: column;
         }

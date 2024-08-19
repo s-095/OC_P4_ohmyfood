@@ -51,7 +51,7 @@
         padding-top: 55px;
         padding-right: 40px;
 
-        & ul {
+        .links {
             flex-direction: row;
             gap: 20px;
 
@@ -59,6 +59,7 @@
                 flex-direction: row;
                 font-weight: 500;
             }
+
             .links-2 {
                 flex-direction: row;
             }
