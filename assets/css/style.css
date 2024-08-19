@@ -137,6 +137,7 @@
   border: unset;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
+  cursor: pointer;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
   transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
 }
@@ -452,6 +453,7 @@ header .header__logo .return-arrow a {
   border: unset;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
+  cursor: pointer;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
   transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
   display: flex;
