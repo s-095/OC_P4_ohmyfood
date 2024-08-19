@@ -17,24 +17,153 @@
 </head>
 
 <body>
-    <div class="main-container">
-        <header>
-            <div class="header__logo">
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+    <header>
+        <div class="header__logo">
             <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo">
-            </div>
-            <div class="search-container">
-                <form class="search-container__form">
-                    <label for="city"> <i class="fas fa-map-marker-alt"></i></label>
-                    <input type="text" id="city" class="search-container__form__input" placeholder="Paris, Belleville">
-                </form>
-            </div>
-        </header>
+        </div>
+        <div class="search-container">
+            <form class="search-container__form">
+                <label for="city"> <i class="fas fa-map-marker-alt"></i></label>
+                <input type="text" id="city" class="search-container__form__input" placeholder="Paris, Belleville">
+            </form>
+        </div>
+    </header>
+    <div class="main-container">
         <section class="restaurants-explore">
             <h2>
                 Réservez le menu qui vous convient
             </h2>
+            <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+            <button>Explorez nos restaurants</button>
+        </section>
+        <section class="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="fonctionnement-cards">
+                <div class="fonctionnement__block">
+                    <div class="fonctionnement__block_number">1</div>
+                    <div class="fonctionnement__block__text-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <p> Choisissez un restaurant</p>
+                    </div>
+                </div>
+
+                <div class="fonctionnement__block">
+                    <div class="fonctionnement__block_number">2</div>
+                    <div class="fonctionnement__block__text-icon">
+                        <i class="fa-solid fa-list"></i>
+                        <p> Composez votre menu</p>
+                    </div>
+                </div>
+                <div class="fonctionnement__block">
+                    <div class="fonctionnement__block_number">3</div>
+                    <div class="fonctionnement__block__text-icon">
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants-block">
+                <div class="restaurants__cards">
+                    <a href="./restaurants/menu-1.html">
+                        <div class="new-popup">
+                            <img src="assets/images/restaurants/palette_du_gout.jpg" alt="La palette du goût">
+                            <span>Nouveau</span>
+                        </div>
+                        <div class="restaurants__cards__caption">
+                            <div class="restaurants__cards__caption__text">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="heart-button">
+                                <div class="restaurants__cards__caption__heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="restaurants__cards__caption__full-heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="restaurants__cards">
+                    <a href="./restaurants/menu-2.html">
+                        <div class="new-popup">
+                            <img src="assets/images/restaurants/note_enchantee.jpg" alt="La note enchantée">
+                            <span>Nouveau</span>
+                        </div>
+                        <div class="restaurants__cards__caption">
+                            <div class="restaurants__cards__caption__text">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="heart-button">
+                                <div class="restaurants__cards__caption__heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="restaurants__cards__caption__full-heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="restaurants__cards">
+                    <a href="./restaurants/menu-3.html">
+                        <img src="assets/images/restaurants/a_la_francaise.jpg" alt="À la française">
+                        <div class="restaurants__cards__caption">
+                            <div class="restaurants__cards__caption__text">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="heart-button">
+                                <div class="restaurants__cards__caption__heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="restaurants__cards__caption__full-heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="restaurants__cards">
+                    <a href="./restaurants/menu-4.html">
+                        <img src="assets/images/restaurants/delices_des_sens.jpg" alt="Le délice des sens">
+                        <div class="restaurants__cards__caption">
+                            <div class="restaurants__cards__caption__text">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="heart-button">
+                                <div class="restaurants__cards__caption__heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="restaurants__cards__caption__full-heart">
+                                    <i class="fa-solid fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </section>
     </div>
+    <footer>
+        <h3>ohmyfood</h3>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:ohmyfood@restaurants.com">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 
 

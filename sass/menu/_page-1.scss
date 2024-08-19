@@ -1,0 +1,186 @@
+header {
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+
+        .return-arrow {
+            position: absolute;
+            left: 0;
+            padding-left: 20px;
+
+            a {
+                color: black;
+                font-size: 1.2em;
+                text-decoration: none;
+                position: relative;
+            }
+        }
+    }
+}
+
+.banner {
+
+    img {
+        width: 100%;
+    }
+}
+
+.menu {
+    position: relative;
+    background-color: $lightgrey-background-color;
+    padding: 15px;
+    margin-top: -45px;
+    border-radius: 40px 40px 0px 0px;
+    overflow: hidden;
+
+    .menu__title {
+        display: flex;
+        justify-content: space-between;
+
+
+        h1 {
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 200;
+            display: flex;
+            padding-right: 15px;
+        }
+
+        .like-button {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            margin-right: 25px;
+
+            .menu__title__heart,
+            .menu__title__full-heart {
+                @include heart-button;
+                line-height: 40px;
+                transition: opacity 0.3s ease-in-out;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .menu__title__full-heart {
+                opacity: 0;
+            }
+
+            &:hover {
+                .menu__title__heart {
+                    opacity: 0;
+                }
+
+                .menu__title__full-heart {
+                    opacity: 1;
+                    background: $gradient-background-color;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+        }
+    }
+
+    .menu__food-block {
+        margin-top: 35px;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 41px;
+                height: 4px;
+                background-color: $lightgreen;
+                position: absolute;
+                left: 0;
+                bottom: -7px;
+            }
+        }
+
+        .menu__food-block__cards {
+            margin-top: 25px;
+            box-sizing: border-box;
+            background-color: $white-background-color;
+            box-shadow: $shadow;
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &:hover {
+                .menu__food-block__cards-price {
+                    margin-right: 0px;
+                }
+            }
+        }
+
+        .menu__food-block__cards-txt {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            white-space: nowrap;
+            overflow: hidden;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 400;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 200;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .menu__food-block__cards-price {
+            display: flex;
+            margin-right: -75px;
+            transition: margin-right 200ms ease-in-out;
+
+            p {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding: 0px 25px 15px 0px;
+            }
+
+            .menu__food-block__cards__check-icon {
+
+                i {
+
+                    color: $white-background-color;
+                    background-color: $lightgreen;
+                    height: 100%;
+                    background-color: #99E2D0;
+                    border-radius: 0px 15px 15px 0px;
+                    width: 59px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .command-button {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0px 25px;
+
+        button {
+            @include button-style($gradient-background-color);
+            display: flex;
+        }
+    }
+}

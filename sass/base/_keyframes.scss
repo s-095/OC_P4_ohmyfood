@@ -1,0 +1,50 @@
+
+/* **** loader **** */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes hold {
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+/* **** apparition menus **** */
+
+@for $i from 1 through 4 {
+    .menu__food-block:nth-child(#{$i}) {
+        animation: apparition 3000ms ($i - 1) * 1000ms backwards;
+    }
+}
+
+@keyframes apparition {
+    from {
+        transform: translateX(100vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
