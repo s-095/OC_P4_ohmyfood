@@ -132,11 +132,12 @@
   font-size: 18px;
 }
 .restaurants-explore button {
-  padding: 12px 28px;
+  padding: 18px 25px;
   border-radius: 30px;
   border: unset;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
+  font-size: 16px;
   cursor: pointer;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
   transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
@@ -279,7 +280,17 @@ footer ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+}
+footer ul li {
+  padding: 4px;
+}
+footer ul .links-1 {
+  display: flex;
+  flex-direction: column;
+}
+footer ul .links-2 {
+  display: flex;
+  flex-direction: column;
 }
 footer h3 {
   font-family: Shrikhand;
@@ -448,11 +459,12 @@ header .header__logo .return-arrow a {
   padding: 40px 0px 25px;
 }
 .menu .command-button button {
-  padding: 12px 28px;
+  padding: 18px 25px;
   border-radius: 30px;
   border: unset;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
+  font-size: 16px;
   cursor: pointer;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.15);
   transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
@@ -505,6 +517,13 @@ header .header__logo .return-arrow a {
   footer ul {
     flex-direction: row;
     gap: 20px;
+  }
+  footer ul .links-1 {
+    flex-direction: row;
+    font-weight: 500;
+  }
+  footer ul .links-2 {
+    flex-direction: row;
   }
   /* **** Menus **** */
   .main-block {

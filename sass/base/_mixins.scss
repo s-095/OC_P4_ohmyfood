@@ -1,9 +1,10 @@
 @mixin button-style($gradient-background-color) {
-    padding: 12px 28px;
+    padding: 18px 25px;
     border-radius: 30px;
     border: unset;
     background: $gradient-background-color;
     color: white;
+    font-size: 16px;
     cursor: pointer;
     box-shadow: $shadow;
     transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;

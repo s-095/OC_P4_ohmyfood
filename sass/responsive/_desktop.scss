@@ -54,6 +54,14 @@
         & ul {
             flex-direction: row;
             gap: 20px;
+
+            .links-1 {
+                flex-direction: row;
+                font-weight: 500;
+            }
+            .links-2 {
+                flex-direction: row;
+            }
         }
     }
 
