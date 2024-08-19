@@ -23,40 +23,10 @@
     }
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes fade {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes hold {
-    from {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    to {
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
 .main-container {
     background-color: $white-background-color;
     font-family: "Roboto";
 }
-
 
 .header__logo {
     padding: 17px 0px;
@@ -77,6 +47,7 @@
 
     &__form__input {
         border: unset;
+        outline: none;
         background-color: $grey-background-color;
         font-size: 16px;
         width: 110px;
@@ -107,10 +78,7 @@
 
     & button {
         @include button-style($gradient-background-color);
-
     }
-
-
 }
 
 .fonctionnement {
@@ -127,6 +95,12 @@
             background-color: $lightgrey-background-color;
             margin: 20px 10px 20px 13px;
 
+            &:hover {
+                i {
+                    color: $purple;
+                }
+            }
+
             &_number {
                 @include list-style;
             }
@@ -137,10 +111,6 @@
 
                 i {
                     color: #7E7E7E;
-
-                    &:hover {
-                        color: $purple;
-                    }
                 }
             }
 
@@ -148,7 +118,6 @@
                 display: flex;
                 font-weight: 500;
             }
-
         }
     }
 }
@@ -191,6 +160,7 @@
 
             p {
                 font-weight: 200;
+                font-size: 17px;
             }
 
             &__caption {
@@ -200,9 +170,14 @@
                 align-content: center;
                 align-items: center;
                 position: relative;
+            }
 
-                &__heart,
-                &__full-heart {
+            .heart-button {
+                display: flex;
+                align-items: center;
+
+                .restaurants__cards__caption__heart,
+                .restaurants__cards__caption__full-heart {
                     @include heart-button;
                     position: absolute;
                     right: 20px;
@@ -267,64 +242,4 @@ footer {
         display: flex;
         align-items: center;
     }
-}
-
-@media (min-width: 992px) {
-
-    .restaurants-explore {
-
-        h2 {
-            font-size: 40px;
-        }
-    }
-
-    .fonctionnement {
-        display: flex;
-        padding: 60px 180px;
-
-        h2 {
-            display: flex;
-
-        }
-
-        .fonctionnement-cards {
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-    }
-
-    .restaurants {
-        padding: 60px 180px;
-
-        .restaurants-block {
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-
-            .restaurants__cards {
-                width: 45%;
-            }
-        }
-    }
-
-    footer {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: row-reverse;
-        align-items: baseline;
-        gap: 57px;
-        height: 114px;
-        padding: unset;
-        padding-top: 55px;
-        padding-right: 40px;
-
-        & li {
-            flex-direction: row;
-            gap:20px;
-        }
-    }
-
-
 }

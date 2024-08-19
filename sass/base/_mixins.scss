@@ -5,9 +5,11 @@
     background: $gradient-background-color;
     color: white;
     box-shadow: $shadow;
+    transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
     &:hover {
-        background: linear-gradient(180deg, lighten($pink, 5%) 0%, lighten($purple, 5%) 100%);
+        opacity: 0.8;
+        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.30)
     }
 }
 

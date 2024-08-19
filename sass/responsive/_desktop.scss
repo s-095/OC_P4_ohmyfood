@@ -1,0 +1,85 @@
+/* **** Main **** */
+
+@media (min-width: 992px) {
+
+    .restaurants-explore {
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .fonctionnement {
+        display: flex;
+        padding: 60px 180px;
+
+        h2 {
+            display: flex;
+
+        }
+
+        .fonctionnement-cards {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+    }
+
+    .restaurants {
+        padding: 60px 180px;
+
+        .restaurants-block {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .restaurants__cards {
+                width: 45%;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        align-items: baseline;
+        gap: 57px;
+        height: 114px;
+        padding: unset;
+        padding-top: 55px;
+        padding-right: 40px;
+
+        & li {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+
+    /* **** Menus **** */
+
+
+    .main-block {
+        padding: 0px 193px;
+
+    }
+
+    .banner {
+        img {
+            height: 383px;
+            object-fit: cover;
+        }
+    }
+
+    .menu {
+        padding: 15px 20%;
+
+        .menu__title {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px 10px;
+
+        }
+    }
+}
