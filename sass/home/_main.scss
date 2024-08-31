@@ -181,7 +181,6 @@
                     @include heart-button;
                     position: absolute;
                     right: 20px;
-                    align-items: center;
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
@@ -190,6 +189,10 @@
 
                 .restaurants__cards__caption__full-heart {
                     opacity: 0;
+                    background: $gradient-background-color;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
                 }
 
                 &:hover {
@@ -199,11 +202,6 @@
 
                     .restaurants__cards__caption__full-heart {
                         opacity: 1;
-                        background: $gradient-background-color;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-clip: text;
-
                     }
                 }
             }

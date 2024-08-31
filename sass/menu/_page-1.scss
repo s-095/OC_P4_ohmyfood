@@ -20,9 +20,10 @@ header {
 }
 
 .banner {
-
     img {
         width: 100%;
+        height: 275px;
+        object-fit: cover;
     }
 }
 
@@ -37,7 +38,6 @@ header {
     .menu__title {
         display: flex;
         justify-content: space-between;
-
 
         h1 {
             font-family: Shrikhand;
@@ -66,6 +66,10 @@ header {
 
             .menu__title__full-heart {
                 opacity: 0;
+                background: $gradient-background-color;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
             }
 
             &:hover {
@@ -75,10 +79,6 @@ header {
 
                 .menu__title__full-heart {
                     opacity: 1;
-                    background: $gradient-background-color;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
                 }
             }
         }
